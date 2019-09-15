@@ -67,7 +67,10 @@ except (OSError, IOError) as e:
     gate = [0.2107, 0.274, 0.518, 575.0, "GATE\n"]
     boost = [0.317, 0.374, 0.308, 648.0, "BOOST\n"]
     powerup = [0.671, 0.190, 0.137, 1244.0, "POWERUP\n"]
-    color_triggers = [lap, gate, boost, powerup]
+    slow = [0.999, 0.999, 0.999, 1244.0, "SLOW\n"]
+    coin = [0.999, 0.999, 0.999, 1244.0, "COIN\n"]
+    octagon = [0.999, 0.999, 0.999, 1244.0, "OCTAGON\n"]
+    color_triggers = [lap, gate, boost, powerup, slow, coin, octagon]
     print('Configuration file not found.')
 
 
